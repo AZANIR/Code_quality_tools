@@ -13,6 +13,6 @@
     "moduleResolution": "node",
     "types": ["node", "@playwright/test"]
   },
-  "include": ["src/**/*", "test-hook.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

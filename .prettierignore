@@ -1,0 +1,34 @@
+# Залежності
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Збірка
+dist/
+build/
+*.min.js
+
+# Логи
+*.log
+
+# Окруження
+.env
+.env.local
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Git
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# Інші
+coverage/
+*.tsbuildinfo
+
