@@ -27,8 +27,7 @@ test.describe('Базові приклади Playwright', () => {
     await expect(link).toBeVisible();
 
     // Перевірка тексту посилання (може містити "More" або "information")
-    const linkText = await link.textContent();
-    expect(linkText).toBeTruthy();
+    await expect(link).toContainText(/./);
 
     // Клік на посилання
     await link.click();
