@@ -75,7 +75,9 @@ export default tseslint.config(
   },
   {
     files: ['**/*.spec.ts', '**/*.test.ts'],
-    ...playwright.configs['flat/recommended'],
+    plugins: {
+      playwright,
+    },
     rules: {
       ...playwright.configs['flat/recommended'].rules,
       '@typescript-eslint/no-explicit-any': 'off',
